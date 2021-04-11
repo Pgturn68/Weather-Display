@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="container-fluid text-center text-blue bg-info p-2">
+      <h1><i class="fas fa-cloud-sun"></i> Weather Dashboard</h1>
+      <h2>What's the Weather?</h2>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 search bg-dark">
+          <div class="form-group d-flex justify-content-center mt-3">
+            <input class="form-control border-info" type="search" id="cityName" placeholder="Search for a City" />
+            <button class="btn btn-info" type="submit" id="searchBtn">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <button class="btn btn-default btn-outline-info mb-3" id="clearList">Clear List</button>
+          <ul class="history list-group" id="history"></ul>
+        </div>
+
+        <div class="weather col-md-10">
+          <div id="today" class="col-md-10 mt-3"></div>
+          <div id="forecast" class="row mt-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery and Moment Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
