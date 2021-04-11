@@ -1,0 +1,10 @@
+/* Button Styling */
+
+#cityName{
+  border-radius: 0.4rem 0 0 0.4rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#searchBtn{
+  border-radius: 0 0.3rem 0.3rem 0;
+}
