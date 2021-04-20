@@ -17,7 +17,7 @@ $("#cityName").keypress(function () {
 function displayCityInfo(chosenCity) {
   $("#today").empty();
   var city = chosenCity
-  var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q="+ city +"&units=imperial&appid=e9b735c3398cfe4564ec31ab0eed5a07";
+  var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q="+ city +"&units=imperial&appid=f1c6d934c46c2d1b26eb5e6679298844";
     $.ajax({
       url: queryURL,
       method: "GET"
@@ -27,7 +27,7 @@ function displayCityInfo(chosenCity) {
 function getFiveDayForecast (){  
   var lat = response.city.coord.lat;
   var lon = response.city.coord.lon;
-  var queryURL = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&units=imperial&appid=e9b735c3398cfe4564ec31ab0eed5a07";
+  var queryURL = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&units=imperial&appid=f1c6d934c46c2d1b26eb5e6679298844";
     $.ajax({
       url: queryURL,
       method: "GET"
