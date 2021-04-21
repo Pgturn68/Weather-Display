@@ -112,7 +112,7 @@ getFiveDayForecast();
           })
         }
 
-function renderButtons() {
+=> renderButtons() {
   $("#history").empty();
   for (var i = 0; i < cities.length; i++) {
     var a = $("<button class= 'btn-outline-info mb-1 mt-0 btn d-flex justify-content-center btn-default btn-block'>");
