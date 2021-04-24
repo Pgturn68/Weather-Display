@@ -13,32 +13,33 @@
 </head>
 
 <body>
-    <header class="container-fluid text-center text-blue bg-info p-2">
-      <h1><i class="fas fa-cloud-sun"></i> Weather Dashboard</h1>
+    <header class="container-fluid text-center text-green bg-warning p-3">
+      <h1><i class="fas fa-sun"></i> Weather Dashboard<i class="fas fa-cloud"></i></h1>
       <h2>Show Me the Weather!</h2>
     </header>
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 search bg-dark">
-          <div class="form-group d-flex justify-content-center mt-3">
+        <div class="col-md-4 search bg-light">
+          <div class="form-group d-flex justify-content-left mt-5">
             <input class="form-control border-info" type="search" id="cityName" placeholder="Search for a City" />
-            <button class="btn btn-info" type="submit" id="searchBtn">
+            <button class="btn btn-info" type="enter" id="searchBtn">
+              
               <i class="fa fa-search"></i>
             </button>
           </div>
-          <button class="btn btn-default btn-outline-info mb-3" id="clearList">Clear List</button>
+          <button class="btn btn-default btn-outline-info mb-3" id="clearList">Clear City List</button>
           <ul class="history list-group" id="history"></ul>
         </div>
 
-        <div class="weather col-md-10">
-          <div id="today" class="col-md-10 mt-3"></div>
-          <div id="forecast" class="row mt-3"></div>
+        <div class="weather col-md-6">
+          <div id="today" class="col-md-10 mt-2"></div>
+          <div id="forecast" class="row mt-4"></div>
         </div>
       </div>
     </div>
 
-    <!-- jQuery and Moment Links -->
+    <!-- jQuery and Moment -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="script.js"></script>
